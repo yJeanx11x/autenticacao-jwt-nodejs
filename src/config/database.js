@@ -7,7 +7,7 @@ const sequelize = new Sequelize(process.env.DB_USER, process.env.DB_HOST, proces
 
 try {
     sequelize.authenticate()
-    console.log("Servidor Rodando!")
+    console.log("Banco de dados conectado!")
 
 } catch (error) {
     console.log(error)
