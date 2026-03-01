@@ -1,11 +1,12 @@
 const z =require('zod')
 
-const autentificao=z.object({
+const validacao=z.object({
 
-nome:z.string().min(3),
+nome:z.string().min(3,'Mínimo 3 caracteres'),
 email:z.email(),
-password:z.string().min(4)
+password:z.string().min(4,'Mínimo 4 caracteres')
 
 })
 
-module.exports=autentificao
+
+module.exports=validacao
